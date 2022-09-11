@@ -55,10 +55,10 @@ const items: Item[] = [
 
 function App() {
   return (
-    <div className="bg-[#14172B] w-full h-screen">
-      <div className='flex w-full h-full items-center'>
+    <div className="w-full h-screen p-6 my-4 xl:my-0">
+      <div className='flex flex-wrap w-full h-full items-center justify-center'>
         {items.map(item=>{
-          return <div id='cardWrapper' className='z-10 flex justify-center items-start relative w-[70%] sm:w-[40%] md:w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[18%] h-[46%] 2xl:h-[40%] m-4 bg-[#626A881A] rounded-2xl '>
+          return <div id='cardWrapper' className='z-10 flex justify-center items-start relative w-[70%] sm:w-[40%] md:w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[18%] h-[48%] 2xl:h-[43%] m-4 bg-[#626A881A] rounded-2xl '>
           <div id='card' className='z-0 relative flex flex-col w-[140px] h-[80px] bg-[#14172B] rounded-b-full border border-[#ECF0FF1A]'>
             <div id='cardLogo' className='flex justify-center items-center bg-no-repeat w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#626A881A] to-[#EDF0F41A] absolute bottom-[12px] left-[20px] z-50'>
               <img src={item.image} className='w-[52%] h-[52%] rounded-full ' />
