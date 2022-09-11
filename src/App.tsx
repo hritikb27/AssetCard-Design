@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
 import './App.css';
 import EthImg from './assets/Ethereum (ETH).png';
 import SolanaImg from './assets/Solana (SOL).png';
@@ -12,7 +12,7 @@ type Item = {
   price: String,
   tvl: String,
   change: String,
-  image: string | HTMLImageElement
+  image: string | undefined
 }
 
 const items: Item[] = [
